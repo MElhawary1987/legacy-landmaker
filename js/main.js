@@ -18,9 +18,9 @@ $(document).ready(function () {
 
 
   $('.slider-head').owlCarousel({
-  autoplay: false,
+  autoplay: true,
   rtl: document.dir == 'rtl' ? true : false,
-  loop:false,
+  loop:true,
   dots:false,
   nav: true,
   items: 1,
@@ -29,8 +29,8 @@ $(document).ready(function () {
 });
  
   $('.brand_slider').owlCarousel({
-		items:8,
-		autoplay:false,
+
+		autoplay:true,
 		rtl:true,
 		loop: true,
 		margin:18,
@@ -39,14 +39,23 @@ $(document).ready(function () {
 			0:{
 				items:1
 			},
-			768:{
+      325:{
+				items:2
+			},
+      425:{
 				items:3
 			},
-			991:{
+			480:{
+				items:3
+			},
+      768:{
 				items:4
 			},
-			1199:{
-				items:8
+			991:{
+				items:5
+			},
+			1024:{
+				items:6
 			},
 			1440:{
 				items:8
@@ -57,7 +66,8 @@ $(document).ready(function () {
 		}
 	}); 
   $('.side-project').owlCarousel({
-  autoplay: false,
+    items:4,
+  autoplay: true,
   loop: true,
   rtl:true,
   nav: false,
@@ -74,23 +84,25 @@ $(document).ready(function () {
 
       },
       768: {
+          items: 1,
+
+      },
+      991: {
           items: 2,
 
       },
-      992: {
-          items: 3,
+      1024: {
+          items: 2,
+
 
       },
       1200: {
           items: 3,
-
-
-      },
-      1400: {
-          items: 4,
-
-
       }
+
   }});
 
 });
+if ($(window).width() <= 768){ 
+    $(".wow").removeClass("wow");
+    }
