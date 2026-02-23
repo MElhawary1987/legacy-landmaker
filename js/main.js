@@ -101,6 +101,18 @@ $(document).ready(function () {
       }
 
   }});
+     var $mediaElements = $('.real-estate');
+    $('.tabs-sec .tab-a').click(function (e) {
+        e.preventDefault();
+        var filterVal = $(this).data('filter');
+        $(".tabs-sec .tab-a").not(this).removeClass("active");
+        $(this).toggleClass("active");
+        if (filterVal === 'all') {
+            $mediaElements.show();
+        } else {
+            $mediaElements.hide().filter('.' + filterVal).show();
+        }
+    });
 
 });
 if ($(window).width() <= 768){ 
