@@ -1821,3 +1821,139 @@ height: auto;
     margin-inline-end: 2px;
 }
 }
+.sell-section{  padding-top: 80px;
+    padding-bottom: 80px;
+}
+.sell-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.sell-flex h2{  font-size: 35px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.sell-flex p{  font-size: 16px;
+    color: var(--border-color);
+    margin-top: 15px;
+    width: 85%;
+}
+.sell-flex img{
+    width: 450px;
+    height: 300px;
+    border-radius: 5px;
+}
+.sell-form{
+        width: 85%;
+    margin: auto;
+    margin-top: 50px;
+}
+.sell-form label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.sell-form input, .sell-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e5e1e5;
+    border-radius: 10px;
+    box-shadow: none;
+
+    background-color: #ffffff;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+.sell-form input{height: 55px;padding: 0px 25px;}
+.sell-form textarea{height: 120px;}
+.cont .form-select {
+-webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+    border: 1px solid #e5e1e5;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 0px 20px;
+    width: 100%;
+    height: 55px;
+    box-shadow: none;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #A3A3A3;
+    margin-bottom: 15px;
+}
+.form-control:focus{box-shadow: none;}
+.sell-form input:focus, .sell-form textarea:focus, .cont .form-select:focus {
+    border-color: var(--sec-color);
+}
+.sell-form button {
+border-radius: 5px;
+    font-size: 16px;
+    width: 160px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+    display: inline-block;
+    border: 1px solid var(--sec-color);
+    -webkit-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+    transition: 0.8s ease;
+    background-image: linear-gradient(to right, #fff, #fff 50%, #CA8E40 50%, #CA8E40 50%);
+    background-size: 211% 100%;
+    background-position: 98%;
+        margin-top: 25px;
+}
+.sell-form button:hover {
+color: var(--sec-color);
+    transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+    background-position: 0%;
+}
+@media (max-width:991px){
+    .sell-flex {
+    flex-direction: column;
+
+    align-items:center;
+}
+.sell-flex p {
+
+    margin: auto;
+    margin-bottom: 35px;
+}
+.sell-flex h2 {
+
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+.sell-section {
+    padding-top: 30px;
+    padding-bottom: 55px;
+}
+}
+@media (max-width:480px){
+    .sell-flex img {
+    width: 100%;
+    height: 40vh;
+
+}
+.sell-flex h2 {
+    font-size: 30px;
+
+}
+.sell-flex p {
+    font-size: 15px;
+    margin-top: 15px;
+    width: 84%;
+
+}
+.sell-form button {
+    width: 100%;
+    margin-top: 15px;
+}
+    .sell-section {
+        padding-bottom: 35px;
+    }
+}
